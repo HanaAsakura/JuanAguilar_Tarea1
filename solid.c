@@ -110,7 +110,8 @@ int main(int argc, char *argv[]){
 double *init(double *array){
   	array[0] = 0.0;
   	array[N-1] = 0.0;
-	  for(int n=1; n<N-1; n++){
+	  int n;
+	  for(n=1; n<N-1; n++){
 		    array[n] = sin(PI*(double)n/(double)(N-1));
 	  }
 	  return array;
